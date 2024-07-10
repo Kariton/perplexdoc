@@ -1,0 +1,17 @@
+---
+services:
+  perplexdoc-dev:
+    build:
+      context: .
+    environment:
+      - TZ=Europe/Berlin
+      - HUGO_BASEURL='http://127.0.0.1:1313'
+      - HUGO_ENVIRONMENT=production
+      - HUGO_ENV=production
+    ports:
+      - "127.0.0.1:1313:80"
+    networks:
+      - hugo
+
+networks:
+  hugo:

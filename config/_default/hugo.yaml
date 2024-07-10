@@ -4,7 +4,6 @@
 
 # The domain of the site
 baseURL: http://perplex.desider.at
-title: Perplex
 DefaultLanguageCode: en-us
 DefaultContentLanguage: en
 metaDataFormat: yaml
@@ -12,6 +11,20 @@ pluralizeListTitles: false
 enableEmoji: true
 enableGitInfo: true
 disableHugoGeneratorInject: false
+
+languages:
+  en:
+    contentDir: content/en
+    languageCode: en-US
+    languageName: English
+    title: Perplex Documentation
+    weight: 1
+  de:
+    contentDir: content/de
+    languageCode: de-DE
+    languageName: Deutsch
+    title: Perplex Dokumentation
+    weight: 2
 
 timeout: "600s"
 
